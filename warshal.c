@@ -1,5 +1,5 @@
 #include<stdio.h>
-void warshal(int r[10][10],int n)
+void warshall(int r[10][10],int n)
 {
 int i,j,k;
 for(k=1;k<=n;k++)
@@ -15,7 +15,7 @@ printf("Enter the adjancency matrix\n");
 for(i=1;i<=n;i++)
 for(j=1;j<=n;j++)
 scanf("%d",&r[i][j]);
-warshal(r,n);
+warshall(r,n);
 printf("Transitive Closure is \n");
 for(i=1;i<=n;i++)
 {
