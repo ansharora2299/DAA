@@ -1,5 +1,5 @@
 #include<stdio.h>
-int a,b,u,v,n,i,j,ne=1,source;
+int a,b,u,v,n,i,j,ne=1;
 int parent[20]={0},min,mincost=0,cost[20][20];
 void main()
 {
