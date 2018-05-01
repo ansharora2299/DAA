@@ -1,14 +1,14 @@
 #include <stdio.h>
-void dij(int n,int v,int cost[10][10],int dist[])
+void dij(int n,int source,int cost[10][10],int dist[])
 {
  int i,u,count,w,visited[10],min;
  for(i=1;i<=n;i++)
  {
    visited[i]=0;
-   dist[i]=cost[v][i];
+   dist[i]=cost[source][i];
  }
- visited[v]=1;
- dist[v]=0;
+ visited[source]=1;
+ dist[source]=0;
  count=2;
  while(count<=n)
  {
