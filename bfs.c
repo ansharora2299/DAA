@@ -25,7 +25,7 @@ void main()
                 printf("%c \t",64+visitedorder[i]);
 }
 
-void bfs(int a[20][20],int n,int visitedorder[20],int source)
+void bfs(int a[20][20],int n,int visited[20],int source)
 {
         int f,r,u,v;
         f=0;
